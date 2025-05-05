@@ -1,6 +1,12 @@
-@yarp_demo_HostAddress = http://localhost:5062
+@yarp = https://localhost:8000
+@backend1 = https://localhost:9000
+@backend2 = https://localhost:9100
 
-GET {{yarp_demo_HostAddress}}/weatherforecast/
+GET {{yarp}}/hello
 Accept: application/json
 
 ###
+
+GET {{backend1}}/weatherforecast
+Accept: application/json
+
